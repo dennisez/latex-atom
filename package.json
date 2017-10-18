@@ -1,0 +1,14 @@
+{
+  "name": "latex-atom",
+  "version": "0.0.1",
+  "description": "LaTeX autocompletion and syntax highlighting for the Atom editor",
+  "repository": "https://github.com/dennisez/latex-atom",
+  "license": "",
+  "engines": {
+    "atom": ">1.21.0"
+  },
+  "dependencies": {},
+  "keywords": [
+    "latex"
+  ]
+}

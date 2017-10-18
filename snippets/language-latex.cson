@@ -1,0 +1,48 @@
+'.text.tex.latex':
+# preamble and package/class file
+  'documentclass':
+    'prefix': 'documentclass'
+    'body': 'documentclass$2{${1:class}}$0'
+  'usepackage':
+    'prefix': 'usepackage'
+    'body': 'usepackage$2{${1:package name}}$0'
+
+# document level
+  'part':
+    'prefix': 'part'
+    'body': 'part{${1:part name}}\n$0'
+  'chapter':
+    'prefix': 'chapter'
+    'body': 'chapter{${1:chapter name}}\n$0'
+  'section':
+    'prefix': 'section'
+    'body': 'section{${1:section name}}\n$0'
+  'subsection':
+    'prefix': 'subsection'
+    'body': 'subsection{${1:subsection name}}\n$0'
+  'subsubsection':
+    'prefix': 'subsubsection'
+    'body': 'subsubsection{${1:subsubsection name}}\n$0'
+  'paragraph':
+    'prefix': 'paragraph'
+    'body': 'paragraph{${1:paragraph name}}\n$0'
+  'subparagraph':
+    'prefix': 'subparagraph'
+    'body': 'subparagraph{${1:subparagraph name}}\n$0'
+
+# environment
+  '\\begin{}...\\end{}':
+    'prefix': 'begin'
+    'body': 'begin{${1:env}}\n\t$0\n\\\\end{${1:env}}'
+
+# math mode
+'.text.tex.latex .string.other.math':
+  'fraction':
+    'prefix': 'frac'
+    'body': 'frac{$1}{$2}$0'
+
+# Beamer
+'.text.tex.latex.beamer':
+  'Frame':
+    'prefix': 'frame'
+    'body': 'begin{frame}{${1:title}}\n\t$0\n\\\\end{frame}'

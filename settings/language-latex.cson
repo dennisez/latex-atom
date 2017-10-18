@@ -1,0 +1,16 @@
+'.text.tex.latex':
+  'editor':
+    'increaseIndentPattern': '^\\s*\\\\begin\\{(?!document).*\\}'
+    'decreaseIndentPattern': '^\\s*\\\\end(\\{(?!document).*\\})?$'
+    'completions': [
+      'corollary'
+      'definition'
+      'description'
+      'enumerate'
+      'equation'
+      'itemize'
+      'lemma'
+      'proof'
+      'proposition'
+      'verbatim'
+    ]
